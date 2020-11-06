@@ -1,0 +1,17 @@
+{
+    "folders": [
+        {
+            "path": "../troubadour"
+        },
+	{
+            "path": "../assets"
+        },
+	{
+            "path": "../minuit"
+        },
+	{
+            "path": "../atelier"
+        }
+    ],
+    "settings": {}
+}

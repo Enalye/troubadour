@@ -13,3 +13,7 @@ troubadour-test-*
 *.o
 *.obj
 *.lst
+build
+bin
+releasex86
+releasex86_64

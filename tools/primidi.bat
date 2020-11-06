@@ -1,0 +1,2 @@
+cd ../primidi
+dub run
