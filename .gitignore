@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/troubadour
+troubadour.so
+troubadour.dylib
+troubadour.dll
+troubadour.a
+troubadour.lib
+troubadour-test-*
+*.exe
+*.o
+*.obj
+*.lst
