@@ -1,0 +1,49 @@
+{
+	"authors": [
+		"enalye"
+	],
+	"copyright": "Copyright © 2020, enalye",
+	"description": "FFXIV midi controller",
+	"dependencies": {
+		"atelier": {
+            "version": "~master",
+            "path": "../atelier"
+		},
+		"minuit": {
+			"version": "~master",
+			"path": "../minuit"
+		}
+	},
+	"license": "proprietary",
+	"name": "troubadour",
+	"targetName": "troubadour",
+	"targetType": "executable",
+	"workingDirectory": "..",
+	"buildTypes": {
+		"unittest": {
+			"buildOptions": ["unittests", "debugMode", "debugInfo"]
+		},
+		"debug": {
+			"buildOptions": ["debugMode", "debugInfo"]
+		},
+		"release": {
+			"buildOptions": ["releaseMode", "optimize", "inline", "noBoundsCheck"]
+		}
+    },
+	"configurations": [
+		{
+			"name": "windows-build",
+			"platforms": ["windows"],
+			"targetPath": "../bin"
+		},
+		{
+			"name": "windows-release",
+			"platforms": ["windows"],
+			"targetPath": "../release$ARCH",
+			"lflags":[
+				"-subsystem:windows",
+				"-entry:mainCRTStartup"
+			]
+		}
+	]
+}
